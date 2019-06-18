@@ -4,6 +4,8 @@
 
 using namespace std;
 
+void arcoCoseno(double);
+
 main()
 {
    char opcion;
@@ -25,7 +27,7 @@ main()
             break;
          case 'd':
             break;
-         case 'e':
+         case 'e': arcoCoseno(numero);
             break;
          case 'f':
             break;
@@ -34,4 +36,10 @@ main()
             cout << "Elija una opcion correcta";
    }
 
+}
+
+void arcoCoseno( double numero )
+{
+   double resultado = acos(numero);
+   cout << "\n" << resultado;
 }
