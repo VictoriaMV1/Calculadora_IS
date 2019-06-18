@@ -5,6 +5,7 @@
 using namespace std;
 
 void arcoCoseno(double);
+void arcoTangente(double);
 
 main()
 {
@@ -30,6 +31,7 @@ main()
          case 'e': arcoCoseno(numero);
             break;
          case 'f':
+         			arcoTangente(numero);
             break;
 
          default:
@@ -42,4 +44,12 @@ void arcoCoseno( double numero )
 {
    double resultado = acos(numero);
    cout << "\n" << resultado;
+}
+
+void arcoTangente (double numero){
+
+double resultado=0;
+resultado = atan(numero);
+cout <<"\n" << resultado;
+
 }
