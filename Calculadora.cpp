@@ -7,11 +7,13 @@ using namespace std;
 main()
 {
    char opcion;
+   double numero;
 
-   cout << "Elija la operacion que desea realizar: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n";
+   cout << "Ingrese un numero: ";
+   cin >> numero;
 
+   cout << "\n\nElija la operacion que desea realizar con el numero que ingreso: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n\n";
    cin >> opcion;
-
 
    switch(opcion)
    {
