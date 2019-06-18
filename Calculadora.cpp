@@ -1,15 +1,47 @@
-#include<iostream>
-#include<string.h>
-#include<math.h>
-
 using namespace std;
-int main(){
-    cout << "Introduzca un numero \n";
-    float numero;
-    cin >> numero
-    
-cout << "Seleccione una operacion \n 1 Seno \n 2 Coseno \n 3 Tangente \n 4 Arco Seno \n 5 Arco Coseno \n 6 Arco Tangente \n ";
- return 0 ;
 
- 
+void arcoCoseno(double);
+void Coseno(double);
+
+main()
+{
+   char opcion;
+   double numero;
+
+   cout << "Ingrese un numero: ";
+   cin >> numero;
+
+   cout << "\n\nElija la operacion que desea realizar con el numero que ingreso: \n a) Seno \n b) Coseno \n c )Tangente \n d )Arco seno \n e) Arco coseno \n f) Arco Tangente \n\n";
+   cin >> opcion;
+
+   switch(opcion)
+   {
+         case 'a':
+            break;
+         case 'b': Coseno(numero);
+            break;
+         case 'c':
+            break;
+         case 'd':
+            break;
+         case 'e': arcoCoseno(numero);
+            break;
+         case 'f':
+            break;
+
+         default:
+            cout << "Elija una opcion correcta";
+   }
+
+}
+
+void Coseno( double numero )
+{
+   double resultado = cos(numero);
+   cout << "\n" << resultado;
+}
+void arcoCoseno( double numero )
+{
+   double resultado =  acos(numero);
+   cout << "\n" << resultado;
 }
