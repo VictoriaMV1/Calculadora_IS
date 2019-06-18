@@ -6,6 +6,7 @@ using namespace std;
 
 void arcoCoseno(double);
 void arcoTangente(double);
+void Tangente(double);
 
 main()
 {
@@ -25,6 +26,7 @@ main()
          case 'b':
             break;
          case 'c':
+         			Tangente(numero);
             break;
          case 'd':
             break;
@@ -50,6 +52,14 @@ void arcoTangente (double numero){
 
 double resultado=0;
 resultado = atan(numero);
+cout <<"\n" << resultado;
+
+}
+
+void Tangente (double numero){
+
+double resultado=0;
+resultado = tan(numero);
 cout <<"\n" << resultado;
 
 }
