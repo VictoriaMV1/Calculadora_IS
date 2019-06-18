@@ -5,6 +5,7 @@
 using namespace std;
 
 void arcoCoseno(double);
+void arcoseno (double numero);
 
 main()
 {
@@ -42,4 +43,10 @@ void arcoCoseno( double numero )
 {
    double resultado = acos(numero);
    cout << "\n" << resultado;
+}
+
+void arcoseno (double numero)
+{
+    double resultado = asin(numero);
+    cout << "\n" <<resultado;
 }
